@@ -4,11 +4,11 @@
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patristic Nectar Synaxarion</title>
-    <link>https://feed.knotandnous.com</link>
+    <link>https://peterberthelsen.github.io/synaxarion</link>
     <description>Daily Synaxarion audio from Patristic Nectar, reformatted into a private podcast feed.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 19:45:49 +0000</lastBuildDate>
-    <atom:link href="https://feed.knotandnous.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2026 01:20:49 +0000</lastBuildDate>
+    <atom:link href="https://peterberthelsen.github.io/synaxarion/feed.xml" rel="self" type="application/rss+xml" />
     <itunes:author>Patristic Nectar Publications</itunes:author>
     <itunes:summary>Daily Synaxarion audio from Patristic Nectar, reformatted into a private podcast feed.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
@@ -20,17 +20,17 @@
     <image>
       <url>https://ott-patristic-production-assets.b-cdn.net/assets/public/19-apr-blessed-matrona-of-moscow.jpg</url>
       <title>Patristic Nectar Synaxarion</title>
-      <link>https://feed.knotandnous.com</link>
+      <link>https://peterberthelsen.github.io/synaxarion</link>
     </image>
     <item>
       <title>Holy Hieromartyr Paphnutios, on the same day Blessed Matrona of Moscow</title>
       <guid isPermaLink="false">patristic-nectar:3478</guid>
-      <link>https://feed.knotandnous.com?date=2026-04-19</link>
+      <link>https://peterberthelsen.github.io/synaxarion?date=2026-04-19</link>
       <pubDate>Sun, 19 Apr 2026 06:00:00 +0000</pubDate>
       <description>Holy Hieromartyr Paphnutios, on the same day Blessed Matrona of Moscow</description>
       <itunes:summary>Holy Hieromartyr Paphnutios, on the same day Blessed Matrona of Moscow</itunes:summary>
       <itunes:image href="https://ott-patristic-production-assets.b-cdn.net/assets/public/19-apr-blessed-matrona-of-moscow.jpg" />
-      <enclosure url="https://feed.knotandnous.com/audio/today.mp3" length="17053778" type="audio/mpeg" />
+      <enclosure url="https://peterberthelsen.github.io/synaxarion/audio/today.mp3" length="17053778" type="audio/mpeg" />
       <itunes:duration>00:07:06</itunes:duration>
     </item>
   </channel>

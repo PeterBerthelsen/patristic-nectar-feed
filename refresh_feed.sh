@@ -3,9 +3,9 @@ set -euo pipefail
 
 PROJECT_DIR="${PROJECT_DIR:-/home/peter/automation/patristic-nectar-feed}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_DIR/docs}"
-PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://feed.knotandnous.com}"
+PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://peterberthelsen.github.io/synaxarion}"
 FEED_URL="${FEED_URL:-$PUBLIC_BASE_URL/feed.xml}"
-CUSTOM_DOMAIN="${CUSTOM_DOMAIN:-feed.knotandnous.com}"
+CUSTOM_DOMAIN="${CUSTOM_DOMAIN:-}"
 TARGET_DATE="${TARGET_DATE:-$(date +%F)}"
 LOCAL_AUDIO_FILE_NAME="${LOCAL_AUDIO_FILE_NAME:-today.mp3}"
 

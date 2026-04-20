@@ -14,11 +14,16 @@ Private/personal RSS feed generator for the daily Patristic Nectar Synaxarion, p
 ./refresh_feed.sh
 ```
 
-That regenerates `docs/` with:
-- `feed.xml`
-- `audio/today.mp3`
-- `index.html`
-- `CNAME`
+That regenerates `docs/` for the current live endpoint:
+- `https://peterberthelsen.github.io/synaxarion/feed.xml`
+- `https://peterberthelsen.github.io/synaxarion/audio/today.mp3`
+
+## Publish to the live site
+```bash
+./publish_to_user_site.sh
+```
+
+That refreshes the feed locally, syncs `docs/` into the `PeterBerthelsen/peterberthelsen.github.io` repo under `/synaxarion/`, and pushes it live.
 
 ## Tests
 ```bash
@@ -26,22 +31,13 @@ pytest tests/ -q
 ```
 
 ## GitHub Pages deployment
-This repo is set up for **GitHub Pages from the `main` branch `/docs` folder**.
-
-Typical publish flow:
-1. run `./refresh_feed.sh`
-2. commit the updated `docs/` artifacts
-3. push to `main`
-4. GitHub Pages serves the updated feed on the custom domain
+The live feed is now published through the existing user site repo:
+- site repo: `PeterBerthelsen/peterberthelsen.github.io`
+- subpath: `/synaxarion/`
 
 Expected public URLs:
-- `https://feed.knotandnous.com/feed.xml`
-- `https://feed.knotandnous.com/audio/today.mp3`
+- `https://peterberthelsen.github.io/synaxarion/feed.xml`
+- `https://peterberthelsen.github.io/synaxarion/audio/today.mp3`
 
 ## Namecheap DNS
-For `feed.knotandnous.com`, create a `CNAME` record:
-- Host: `feed`
-- Value: `PeterBerthelsen.github.io`
-- TTL: `Automatic`
-
-If Namecheap shows a "proxy" option, leave it off. GitHub Pages should answer directly.
+`feed.knotandnous.com` was attempted first but GitHub Pages TLS provisioning stalled. The active/public endpoint is currently the GitHub user-site URL above.
