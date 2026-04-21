@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OUTPUT_DIR="/mnt/c/Users/peter/iCloudDrive/iCloud~md~obsidian/Agents-HQ/00 Inbox/patristic-nectar-synaxarion"
+OUTPUT_DIR="${OUTPUT_DIR:-/home/peter/automation/patristic-nectar-feed/docs}"
 PORT="8019"
-LOG_FILE="$OUTPUT_DIR/http-server.log"
+LOG_FILE="/tmp/patristic-nectar-http.log"
 
 if ss -ltn sport = :$PORT | grep -q LISTEN; then
   exit 0
 fi
 
 cd "$OUTPUT_DIR"
-nohup python -m http.server "$PORT" --bind 0.0.0.0 >> "$LOG_FILE" 2>&1 &
+nohup python3 -m http.server "$PORT" -b 127.0.0.1 -d "$OUTPUT_DIR" >> "$LOG_FILE" 2>&1 &

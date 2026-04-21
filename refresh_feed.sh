@@ -11,7 +11,7 @@ LOCAL_AUDIO_FILE_NAME="${LOCAL_AUDIO_FILE_NAME:-today.mp3}"
 
 cd "$PROJECT_DIR"
 rm -rf "$OUTPUT_DIR"
-python patristic_nectar_feed.py \
+python3 patristic_nectar_feed.py \
   --date "$TARGET_DATE" \
   --output-dir "$OUTPUT_DIR" \
   --feed-url "$FEED_URL" \
